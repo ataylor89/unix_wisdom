@@ -72,7 +72,9 @@ The standard syntax for grep is:
 
     grep -options [pattern] [file(s)]
 
-So the command <pre>grep 'logo.png' index.html</pre> passes a pattern and a file as arguments. The command <pre>grep –nrw . -e 'old_logo.png'</pre> passes options and their arguments.
+So the command <pre>grep 'logo.png' index.html</pre> passes a pattern and a file as arguments. 
+
+The command <pre>grep –nrw . -e 'old_logo.png'</pre> passes options and their arguments.
 
 ## The syntax for a grep command
 

@@ -372,6 +372,6 @@ Why do they call shell shell?
 
 It's because a Unix shell is, conceptually, the outermost layer of the operating system, which provides access to the operating system's software.
 
-As a reminder, the program grep is named after the command g/re/p, a command in the text editor, which searches globally for a regular expression and prints matching lines.
+As a reminder, the program grep is named after the command g/re/p, a command in the text editor ed, which searches globally for a regular expression and prints matching lines.
 
 That's where shell and grep get their names.

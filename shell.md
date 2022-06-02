@@ -96,7 +96,7 @@ This usage of grep searches for a pattern in every file of the directory tree.
 
 The man command brings up the manual page for any Unix command. The syntax is
 
-    man <command>
+    man command
 
 For example,
 

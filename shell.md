@@ -307,3 +307,13 @@ It's helpful to use programs like Terminal and to get to know the command-line i
 A command-line interface interprets a user's commands.
 
 The Unix shell is a command-line interface, a scripting language, a programming language, and an interpreter.
+
+## Added support for conclusion
+
+There really is a Unix shell and a Windows shell, which provide a user interface to the operating system. 
+
+The Unix shell and the Windows shell both have a graphical user interface and a command-line interface.
+
+We can say that shell refers to the user interface of an operating system.
+
+One formal definition of shell is the user interface of an operating system.

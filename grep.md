@@ -355,3 +355,11 @@ We can also use grep with options, e.g.
     grep -nrw pattern
 
 The above command searches all files in the directory tree (recursively) for the specified pattern. It prints the line number of matching lines and searches for the pattern as a word.
+
+grep is a program. Shell is a program and an interpreter. Python is a program and an interpreter. Thus we can see an analogy between shell and python and java: they are all interpreters.
+
+When you learn shell, you learn a programming language (also called a scripting language). grep is a useful word in the shell scripting language. grep is so standard that it's really a part of the Unix shell.
+
+Since Mac OS and Linux are based on Unix, grep is also a part of Mac OS and Linux shells.
+
+grep is a standard utility in the Unix, Linux, and Mac OS shells.

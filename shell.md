@@ -2,360 +2,78 @@
 
 ## What is shell?
 
-Shell gets its name from the word shell, which can mean the outermost layer of something. The shell program on an operating system is the outermost layer of the operating system.
-
-Shell is an interface to a computer. It's a very big interface to a computer, which gives you access to all of the files and software on a computer.
-
-Shell is a command-line interface, abbreviated CLI. 
-
-Shell is also a scripting language, a programming language, and an interpreter.
-
-When you learn shell, you learn a scripting language.
-
-When you learn shell, you learn a programming language.
-
-(A script is a kind of program, and a scripting language is a kind of programming language.)
-
-Shell is an interpreter just like python and java are interpreters.
-
-Examples of shells are bash and zsh, which are commonly found on Unix and Mac OS.
-
-At the end of this document, we'll discover that Shell is more than a command-line interface. It might actually be the user interface to the operating system.
-
-Why is this?
-
-Think about the Unix shell, the Windows shell, the Macintosh shell. These shells refer not just to the command-line interface we use in Terminal and MS-DOS and terminal emulators.
-
-These shells refer to the user interfaces of Unix, Windows, and Mac OS.
-
 One formal definition of shell is the user interface of an operating system.
 
-We're going to think about shell as a command-line interface (at the beginning of this document) and gradually discover it's the user interface of an operating system (I discovered this during writing).
+When we speak of the Unix shell, we speak of the Unix user interface.
 
-The user interfaces of Unix, Windows and Mac OS include both the GUI and the CLI. When we say shell is the user interface of an operating system, we mean it has both a GUI (the graphical shell) and a CLI (the command line interface).
+There is also the Windows shell and the Macintosh shell. 
 
-The graphical user interface and the command-line interface are two parts of the user interface of an operating system. A third part is voice recognition. A fourth part is face recognition.
+The user interface of an operating system (the shell) consists of the graphical user interface (GUI), the command-line interface (CLI), voice recognition, face recognition, and more.
 
-It makes sense to think of shell as the user interface of an operating system. We'll think of it in both ways (as a command-line interface and as the entire user inteface) unless I edit this document and give it one definition.
+Part of learning the Unix shell, the Windows shell, or the Macintosh shell is learning the command-line interface of the operating system.
 
-## How can I use shell?
+## How can I use the command-line interface?
 
-Shell is a command-line interface. bash and zsh are shells. But how do you interact with bash and zsh?
+On Mac OS, you can use the command-line interface by opening Terminal. If Terminal is not already in your Dock, you can store Terminal in Dock for easy access.
 
-Let's go through it step by step.
+In Terminal, you can type a command like
 
-You can interact with shell on Mac OS using Terminal.
+    ls -l
 
-When you type on your keyboard or make clicks on your trackpad, these events enter an event queue. When the event is a system-level event (like swiping left or right on the trackpad) the operating system handles them.
+and get a listing of the directory contents.
 
-Otherwise, the operating system forwards the events to the event queue of the currently running application.
+To end the command, press the return key. When you press the return key, Terminal recognizes the end of a command and interprets the command.
 
-Terminal has its own event loop. Terminal listens for events and handles them.
+## How does Terminal work?
 
-Terminal listens for keypresses, mouse clicks, and trackpad activity.
+Terminal is a GUI that has an underlying interpreter which interprets your commands. The underlying interpreter is often bash or zsh, two derivatives of sh.
 
-When you type the "Return" key in Terminal, Terminal recognizes this keypress, and interprets the line of text as a command. Terminal passes the command to the underlying shell, bash or zsh.
+If you'd like to find out which interpreter Terminal is using, you can run the commands
 
-## Is Terminal a GUI or a CLI?
+    echo $0
 
-The answer is, both.
+and
 
-Terminal is both a GUI and a CLI.
+    echo $SHELL
 
-Remember that shell is an interface. Terminal is an interface. Finder is an interface.
+in Terminal.
 
-shell is a command-line interface (CLI). Finder is a graphical user interface (GUI). 
+## What are some useful commands?
 
-Terminal is both a command-line interface (CLI) and a graphical user interface (GUI).
+In this document we have used the ls and echo commands. 
 
-The reason is simple. Terminal gives you a graphical user interface (like menus and menu items and a window wiht a scrollable text area). Terminal also gives you a command-line interface (via the underlying shell which interprets your commands).
+We used the command
 
-Thus Terminal is both a GUI (graphical user interface) and a CLI (command-line interface).
+    ls -l
 
-Terminal affords you tremendous access to a computer (all of its files and software).
+to get a listing of files in the current directory.
 
-Finder similarly affords you tremendous access to a computer (all of its files and all of its applications).
+The -l option tells ls to use the long format.
 
-Terminal and Finder are both interfaces to Mac OS, and to the computer running Mac OS.
+We can also use the -a option, to list filenames that begin with a dot.
 
-Finder is a GUI. Terminal is both a GUI and a CLI.
+    ls -al
 
-## What's a step-by-step summary of how I use Terminal?
+Many configuration files (like .zprofile and .bash_profile) have names that begin with a dot.
 
-The operating system (Mac OS) schedules processing time for Terminal.
+We used the echo command, with the $0 and $SHELL environment variables.
 
-Terminal listens for events in an event loop.
+The echo command echoes text in Terminal.
 
-Terminal picks up your keyboard input.
+The grep command, which searches for patterns in files, is very useful, and is documented in the [grep.md Markdown file](https://github.com/ataylor89/unix_wisdom/blob/main/grep.md).
 
-Terminal listens for the enter key to mark the end of a command.
+We can bring up the manual for any Unix shell command by typing
 
-Terminal passes the command to the underlying shell (bash or zsh).
+    man <command>
 
-The shell interprets your command and produces output. 
+For example,
 
-Terminal picks up the output (by reading from the shell process) and prints the output on its text area.
+    man ls
+    man echo
+    man grep
 
-Terminal reads from and writes to the shell process to interpret your commands, and prints the output of the shell program on its text area.
+The man command is a very useful command.
 
-## Shell is a CLI. But is it a GUI?
+The document it brings up is called a man page.
 
-Let's think about this. Terminal is both a GUI and a CLI. Shell is a CLI.
-
-We can use shell without a graphical user interface.
-
-We can use shell over voice recognition.
-
-There are computers that have shell as software but don't have graphical user interfaces. They might have voice interfaces that interact with programs like shell.
-
-So you can make a Unix computer that has no windows, keyboards, or mouse clicks, but instead relies on voice recognition that interacts with a command-line interface like shell.
-
-It's kind of like this.
-
-You can SSH into a computer over voice recognition. 
-
-And that's a metaphor (we're comparing SSH to voice recognition).
-
-You can speak a username and a password to a computer in order to log in.
-
-You can speak commands to a computer that are recognized by voice recognition and interpreted by shell.
-
-## Is there another way of explaining it?
-
-CLI is a beautiful acronym as is GUI.
-
-Really, shell is an interpreter and a scripting language. It's also a programming language.
-
-When you think of shell as being analogous to python, it makes a lot of sense.
-
-Shell is a scripting language, a programming language, and an interpreter.
-
-When you learn shell, you learn a scripting language, a programming language, and an interpreter.
-
-## Commands and shell scripts
-
-We can write single commands to shell that are interpreted by shell.
-
-    ls -als | grep .zprofile 
-
-    ls -als | grep -e .zprofile -e .bash_profile -e .zsh
-
-    grep -nrw <pattern>
-
-    grep <pattern> <file>
-
-We can also write shell scripts that are interpreted by shell.
-
-    mkdir icons.iconset
-    sips -z 512 512   $1 --out icons.iconset/icon_512x512.png
-    cp $1 icons.iconset/icon_512x512@2x.png
-    sips -z 512 512   $1 --out icons.iconset/icon_256x256@2x.png
-    sips -z 256 256   $1 --out icons.iconset/icon_256x256.png
-    sips -z 256 256   $1 --out icons.iconset/icon_128x128@2x.png
-    sips -z 128 128   $1 --out icons.iconset/icon_128x128.png
-    sips -z 64 64     $1 --out icons.iconset/icon_32x32@2x.png
-    sips -z 32 32     $1 --out icons.iconset/icon_32x32.png
-    sips -z 32 32     $1 --out icons.iconset/icon_16x16@2x.png
-    sips -z 16 16     $1 --out icons.iconset/icon_16x16.png
-    iconutil -c icns icons.iconset
-
-The above shell script creates an icons.icns file from an image. The image filename is passed as an argument and stored as the variable $1.
-
-## Summary
-
-Shell is a scripting language, a programming language, and an interpreter.
-
-Many operating systems come equipped with shells, like Unix, Linux, Mac OS and Windows.
-
-Shell gets its name from the word shell, which can mean the outermost layer of something. A shell program on an operating sytem is the outermost layer of an operating system.
-
-Shell programs give you a command-line interface to the files and software on an operating system.
-
-You can interact with the default shell on a Mac OS computer by opening Terminal.
-
-## Addendum
-
-In our step-by-step process, we outlined how Terminal listens for events in an event loop. 
-
-It's also the case that the operating system listens for events in an event loop. Like when you swipe left or right on your trackpad to switch between processes.
-
-Or when you move your mouse to the bottom of the screen to bring up the Dock.
-
-Well, let's think about this idea: The operating system listens for events.
-
-How does the operating system listen for events?
-
-Through keyboard input, trackpad input, mouse input, voice input.
-
-How does the operating system interface with the user?
-
-Through touch sensors, visual interfaces, and voice recognition.
-
-Thus the operating system (Mac OS) interfaces with the user through touch, sight or sound.
-
-A graphical user interface is a visual interface that uses touch sensors and visual cues.
-
-There are touch interfaces and voice interfaces (TI and VI) that use the senses of touch and sound.
-
-There are image recognition interfaces (like face recognition) that use the sense of sight.
-
-So an operating system listens for events (inputs) in its event loop, stores these events in its event queue, and handles these events.
-
-Modern operating systems often have interfaces that use touch, sight and sound (keyboard input, trackpads, mouse clicks, face recognition, voice recognition).
-
-It's helpful to really think of interfaces, inputs, outputs, and events.
-
-Operating systems have interfaces, inputs, outputs, and events.
-
-How does a user interact with a shell program? There are many ways. There is keyboard input, trackpads, mouse clicks, voice recognition. 
-
-Terminal is a graphical shell that lets us interact with a Mac OS computer and and the Mac operating system.
-
-What did Windows do? It made Unix more graphical.
-
-What did Mac OS do? It made Unix more graphical.
-
-Unix and Linux have learned from Mac OS and Windows and updated their graphical interfaces.
-
-Increasingly computers use voice recognition and face recognition in addition to touch sensors and GUIs.
-
-Shell is a scripting language, a programming language, and an interpreter.
-
-Shell can be graphical. Terminal is a graphical shell.
-
-Shell gives us access to a computer and its operating system.
-
-Shell is a interface to a computer and its operating system.
-
-What kind of interface is it? A command-line interface.
-
-Shell is a command-line interface to a computer and its operating system.
-
-It's also a scripting language, a programming language, and an interpreter.
-
-We can script and program on a command-line interface. That's one reason CLIs are so powerful.
-
-We can also run commands on a command-line interface. Like grep and ssh.
-
-And why are GUIs so powerful? Because of drag-and-drop and syntax highlighting. Because of menus and menu items and left clicks and right clicks.
-
-Is the GUI and CLI distinction helpful?
-
-It's the case that there are so many examples of GUIs and CLIs (like Finder and Visual Studio code for GUIs and Terminal, bash and zsh for CLIs) that they really are concrete concepts in computer science.
-
-Unix was created in 1969. The Unix operating system included the Unix shell, a powerful scripting language and command language. 
-
-Microsoft Windows was introduced in 1985. The Windows operating system is named after the concept of windows, the top-level window component in a graphical user interface.
-
-Microsoft Windows is more graphical than MS-DOS, a Microsoft operating system which preceded it. 
-
-Thus CLI is an acronym that has often described the Unix shell, programs like bash and zsh, and Terminal.
-
-GUI is an acronym that described a development in user interfaces that included windows, menubars, menus, menu items, buttons, labels, left clicks, right-clicks, dialogs, and widgets.
-
-Buttons, icons, menus, menu items are part of the graphical user interface.
-
-Commands are part of the command-line interface.
-
-So graphical user interfaces make use of widgets like buttons, menus, menu items, frames, windows.
-
-Command-line interfaces make use of commands like ls, grep, ssh, cat, vi, echo.
-
-When we think of graphical user interfaces, we can think of widgets.
-
-When we think of command-line interfaces, we can think of commands.
-
-## A second addendum
-
-A shell can be graphical. 
-
-If shell is the outermost layer of an operating system, there's a command-line interface (the Unix shell or MS-DOS) and a graphical interface (the graphical shell).
-
-The word shell often refers to the Unix shell or MS-DOS, because these are interpreters, scripting languages, and programming languages.
-
-If we're going to be concrete (and it often helps to be concrete) we have:
-
-    1. The Unix shell, the command-line interface to Unix
-    2. MS-DOS, the command-line interface to Windows
-    3. The graphical shell on Mac OS X (which includes Finder, Dock and Desktop)
-    4. The graphical shell on Microsoft Windows (which includes Start Menu, Taskbar and Desktop)
-
-So shell is a word that can refer to the outermost layer of an operating system. It can include the command-line interface (the Unix shell or MS-DOS) as well as the graphical shell (Finder, Dock, Desktop or Start Menu, Taskbar, and Desktop).
-
-Shell often refers to the Unix shell or MS-DOS. 
-
-The Unix shell and MS-DOS are command-line interfaces, scripting languages, and interpreters.
-
-Is there confusion about the word shell? A little.
-
-Are Finder, Dock and Desktop part of the Mac OS shell?
-
-Are Start Menu, Taskbar and Desktop part of the Microsoft Windows shell?
-
-We can say they're part of the graphical shell.
-
-But when we talk about the Unix shell or MS-DOS, we're often referring to the command-line interfaces for Unix and Microsoft Windows. 
-
-When we talk about bash, zsh, and MS-DOS, we're being really concrete.
-
-The Unix shell and MS-DOS are command-line interfaces, scripting languages, and interpreters.
-
-When we think of GUIs, we think of widgets.
-
-When we think of command-line interfaces (CLIs) we think of commands.
-
-Does shell mean interface?
-
-It's almost like we're using the word shell to refer to an operating system's user interface.
-
-Maybe that's what it is.
-
-Maybe a shell is the user interface of an operating system. 
-
-An operating system has a command-line interface and a graphical user interface.
-
-The Unix shell often refers to the command-line interface of Unix.
-
-The Unix shell is a command-line interface, a scripting language, a programming language, an interpreter.
-
-## Conclusion
-
-What's a formal definition of shell?
-
-This might be a formal definition.
-
-An operating system's shell is its user interface.
-
-A shell is the user interface of an operating system.
-
-An operating system has a command-line interface and a graphical user interface.
-
-It's helpful to use programs like Terminal and to get to know the command-line interface of Mac OS.
-
-A command-line interface interprets a user's commands.
-
-The Unix shell is a command-line interface, a scripting language, a programming language, and an interpreter.
-
-## Added support for conclusion
-
-There really is a Unix shell and a Windows shell, which provide a user interface to the operating system. 
-
-The Unix shell and the Windows shell both have a graphical user interface and a command-line interface.
-
-We can say that shell refers to the user interface of an operating system.
-
-One formal definition of shell is the user interface of an operating system.
-
-## Added support for conclusion
-
-There's the Unix shell, the Windows shell, the Macintosh shell. 
-
-A shell is the user interface of an operating system.
-
-The Unix, Windows and Macintosh shells all have a graphical user interface and a command-line interface.
-
-A shell is both a user interface and a language.
-
-Shell scripting language is a kind of programming language.
-
-When we learn about the Macintosh shell, we learn the command-line interface (through using Terminal and terminal emulators) and the graphical user interface (through using Dock, Finder, Desktop, et cetera).
+The man page for a command has a synopsis, a description and more. The man page often has a section for examples and a section on the history of the command.

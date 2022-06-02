@@ -1,4 +1,4 @@
-# terminal
+# Terminal
 
 ## How do I open Terminal?
 

@@ -365,3 +365,13 @@ When you learn shell, you learn a programming language (also called a scripting 
 Since Mac OS and Linux are based on Unix, grep is also a part of Mac OS and Linux shells.
 
 grep is a standard utility in the Unix, Linux, and Mac OS shells.
+
+## A second addendum
+
+Why do they call shell shell?
+
+It's because a Unix shell is, conceptually, the outermost layer of the operating system, which provides access to the operating system's software.
+
+As a reminder, the program grep is named after the command g/re/p, a command in the text editor, which searches globally for a regular expression and prints matching lines.
+
+That's where shell and grep get their names.

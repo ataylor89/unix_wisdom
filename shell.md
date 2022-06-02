@@ -153,9 +153,13 @@ You can interact with the default shell on a Mac OS computer by opening Terminal
 
 ## Addendum
 
-In our step-by-step process, we outlined how the operating system listens to events, and when Terminal is running, passes keyboard input to Terminal, which then gets interpeted by shell.
+In our step-by-step process, we outlined how Terminal listens for events in an event loop. 
 
-Well, let's focus on this idea: The operating system listens for events.
+It's also the case that the operating system listens for events in an event loop. Like when you swipe left or right on your trackpad to switch between processes.
+
+Or when you move your mouse to the bottom of the screen to bring up the Dock.
+
+Well, let's think about this idea: The operating system listens for events.
 
 How does the operating system listen for events?
 
@@ -167,7 +171,7 @@ Through touch sensors, visual interfaces, and voice recognition.
 
 Thus the operating system (Mac OS) interfaces with the user through touch, sight or sound.
 
-A graphical user interface is a visual interface that uses the sense of sight.
+A graphical user interface is a visual interface that uses touch sensors and visual cues.
 
 There are touch interfaces and voice interfaces (TI and VI) that use the senses of touch and sound.
 

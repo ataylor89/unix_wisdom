@@ -148,3 +148,59 @@ Shell gets its name from the word shell, which can mean the outermost layer of s
 Shell programs give you a command-line interface to the files and software on an operating system.
 
 You can interact with the default shell on a Mac OS computer by opening Terminal.
+
+## Addendum
+
+In our step-by-step process, we outlined how the operating system listens to events, and when Terminal is running, passes keyboard to Terminal, which then gets interpeted by shell.
+
+Well, let's focus on this idea: The operating system listens for events.
+
+How does the operating system listen for events?
+
+Through keyboard input, trackpad input, mouse input, voice input.
+
+How does the operating system interface with the user?
+
+Through touch sensors, visual interfaces, and voice recognition.
+
+Thus the operating system (Mac OS) interfaces with the user through touch, sight or sound.
+
+A graphical user interface is a visual interface that uses the sense of sight.
+
+There are touch interfaces and voice interfaces (TI and VI) that use the senses of touch and sound.
+
+There are image recognition interfaces (like face recognition) that use the sense of sight.
+
+So an operating system listens for events (inputs) in its event loop, stores these events in its event queue, and handles these events.
+
+Modern operating systems often have interfaces that use touch, sight and sound (keyboard input, trackpads, mouse clicks, face recognition, voice recognition).
+
+It's helpful to really think of interfaces, inputs, outputs, and events.
+
+Operating systems have interfaces, inputs, outputs, and events.
+
+How does a user interact with a shell program? There are many ways. There is keyboard input, trackpads, mouse clicks, voice recognition. 
+
+Terminal is a graphical shell that lets us interact with a Mac OS computer and and the Mac operating system.
+
+What did Windows do? It made Unix more graphical.
+
+What did Mac OS do? It made Unix more graphical.
+
+Unix and Linux have learned from Mac OS and Windows and updated their graphical interfaces.
+
+Increasingly computers use voice recognition and face recognition in addition to touch sensors and GUIs.
+
+Shell is a scripting language, a programming language, and an interpreter.
+
+Shell can be graphical. Terminal is a graphical shell.
+
+Shell gives us access to a computer and its operating system.
+
+Shell is a interface to a computer and its operating system.
+
+What kind of interface is it? A command-line interface.
+
+Shell is a command-line interface to a computer and its operating system.
+
+It's also a scripting language, a programming language, and an interpreter.

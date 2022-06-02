@@ -64,7 +64,7 @@ The echo command echoes text in Terminal.
 
 The grep command, which searches for patterns in files, is very useful, and is documented in the [grep.md Markdown file](https://github.com/ataylor89/unix_wisdom/blob/main/grep.md).
 
-We can bring up the manual for any Unix shell command by typing
+We can bring up the manual page for any Unix shell command by typing
 
     man <command>
 
@@ -74,11 +74,9 @@ For example,
     man echo
     man grep
 
-The man command is a very useful command.
+We often call the manual page the "man page" as an abbreviation.
 
-The document it brings up is called a man page.
-
-The man page for a command has a synopsis, a description and more. The man page often has a section for examples and a section on the history of the command.
+The man page has many sections, including a synopsis, a description and more. The man page often has a section for examples and a section on the history of the command.
 
 ## Where does shell gets its name?
 

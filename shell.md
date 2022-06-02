@@ -32,6 +32,12 @@ One formal definition of shell is the user interface of an operating system.
 
 We're going to think about shell as a command-line interface (at the beginning of this document) and gradually discover it's the user interface of an operating system (I discovered this during writing).
 
+The user interfaces of Unix, Windows and Mac OS include both the GUI and the CLI. When we say shell is the user interface of an operating system, we mean it has both a GUI (the graphical shell) and a CLI (the command line interface).
+
+The graphical user interface and the command-line interface are two parts of the user interface of an operating system. A third part is voice recognition. A fourth part is face recognition.
+
+It makes sense to think of shell as the user interface of an operating system. We'll think of it in both ways (as a command-line interface and as the entire user inteface) unless I edit this document and give it one definition.
+
 ## How can I use shell?
 
 Shell is a command-line interface. bash and zsh are shells. But how do you interact with bash and zsh?

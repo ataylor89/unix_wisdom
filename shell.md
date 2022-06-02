@@ -106,7 +106,7 @@ For example,
 
 We often call the manual page the "man page" as an abbreviation.
 
-The man page has many sections, including a synopsis, a description and more. The man page often has a section for examples and a section on the history of the command.
+The man page has many sections, including a synopsis, a description and more. The man page often has a section with examples and a section on the history of the command.
 
 ## Where does shell gets its name?
 

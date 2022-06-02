@@ -110,8 +110,6 @@ The man page has many sections, including a synopsis, a description and more. Th
 
 ## Where does shell gets its name?
 
-We defined shell as the user interface of an operating system.
-
 The word shell often refers to the outermost layer of something. 
 
 The user interface of an operating system can be thought of as its outermost layer.

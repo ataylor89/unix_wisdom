@@ -60,11 +60,13 @@ Finder is a GUI. Terminal is both a GUI and a CLI.
 
 ## What's a step-by-step summary of how I use Terminal?
 
-The operating system (Mac OS) listens for events in an event loop.
+The operating system (Mac OS) schedules processing time for Terminal.
 
-It picks up your keyboard input.
+Terminal listens for events in an event loop.
 
-It passes your keyboard input to the process currently running (Terminal).
+Terminal picks up your keyboard input.
+
+Terminal listens for the enter key to mark the end of a command.
 
 Terminal passes the command to the underlying shell (bash or zsh).
 

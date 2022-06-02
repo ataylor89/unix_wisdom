@@ -219,7 +219,7 @@ And why are GUIs so powerful? Because of drag-and-drop and syntax highlighting. 
 
 Is the GUI and CLI distinction helpful?
 
-It's the case that there are so many examples of GUIs and CLIS (like Finder and Visual Studio code for GUIS and Terminal, bash and zsh for CLIS) that they really are concrete concepts in computer science.
+It's the case that there are so many examples of GUIs and CLIs (like Finder and Visual Studio code for GUIs and Terminal, bash and zsh for CLIs) that they really are concrete concepts in computer science.
 
 Unix was created in 1969. The Unix operating system included the Unix shell, a powerful scripting language and command language. 
 

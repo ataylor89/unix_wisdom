@@ -317,3 +317,17 @@ The Unix shell and the Windows shell both have a graphical user interface and a 
 We can say that shell refers to the user interface of an operating system.
 
 One formal definition of shell is the user interface of an operating system.
+
+## Added support for conclusion
+
+There's the Unix shell, the Windows shell, the Macintosh shell. 
+
+A shell is the user interface of an operating system.
+
+The Unix, Windows and Macintosh shells all have a graphical user interface and a command-line interface.
+
+A shell is both a user interface and a language.
+
+Shell scripting language is a kind of programming language.
+
+When we learn about the Macintosh shell, we learn the command-line interface (through using Terminal and terminal emulators) and the graphical user interface (through using Dock, Finder, Desktop, et cetera).

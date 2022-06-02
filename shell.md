@@ -107,3 +107,44 @@ When you think of shell as being analogous to python, it makes a lot of sense.
 Shell is a scripting language, a programming language, and an interpreter.
 
 When you learn shell, you learn a scripting language, a programming language, and an interpreter.
+
+## Commands and shell scripts
+
+We can write single commands to shell that are interpreted by shell.
+
+    ls -als | grep .zprofile 
+
+    ls -als | grep -e .zprofile -e .bash_profile -e .zsh
+
+    grep -nrw <pattern>
+
+    grep <pattern> <file>
+
+We can also write shell scripts that are interpreted by shell.
+
+    mkdir icons.iconset
+    sips -z 512 512   $1 --out icons.iconset/icon_512x512.png
+    cp $1 icons.iconset/icon_512x512@2x.png
+    sips -z 512 512   $1 --out icons.iconset/icon_256x256@2x.png
+    sips -z 256 256   $1 --out icons.iconset/icon_256x256.png
+    sips -z 256 256   $1 --out icons.iconset/icon_128x128@2x.png
+    sips -z 128 128   $1 --out icons.iconset/icon_128x128.png
+    sips -z 64 64     $1 --out icons.iconset/icon_32x32@2x.png
+    sips -z 32 32     $1 --out icons.iconset/icon_32x32.png
+    sips -z 32 32     $1 --out icons.iconset/icon_16x16@2x.png
+    sips -z 16 16     $1 --out icons.iconset/icon_16x16.png
+    iconutil -c icns icons.iconset
+
+The above shell script creates an icons.icns file from an image. The image filename is passed as an argument and stored as the variable $1.
+
+## Summary
+
+Shell is a scripting language, a programming language, and an interpreter.
+
+Many operating systems come equipped with shells, like Unix, Linux, Mac OS and Windows.
+
+Shell gets its name from the word shell, which can mean the outermost layer of something. A shell program on an operating sytem is the outermost layer of an operating system.
+
+Shell programs give you a command-line interface to the files and software on an operating system.
+
+You can interact with the default shell on a Mac OS computer by opening Terminal.

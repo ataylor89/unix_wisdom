@@ -151,7 +151,7 @@ You can interact with the default shell on a Mac OS computer by opening Terminal
 
 ## Addendum
 
-In our step-by-step process, we outlined how the operating system listens to events, and when Terminal is running, passes keyboard to Terminal, which then gets interpeted by shell.
+In our step-by-step process, we outlined how the operating system listens to events, and when Terminal is running, passes keyboard input to Terminal, which then gets interpeted by shell.
 
 Well, let's focus on this idea: The operating system listens for events.
 

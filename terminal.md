@@ -6,7 +6,7 @@ Terminal might already be installed on your dock. If not, you can find it by ope
 
 Once the Terminal application launches, it will show up in the Dock.
 
-To keep Terminal in the dock, you can right-click the Terminal icon, select options, and select "Keep in Dock"
+To keep Terminal in the dock, you can right-click the Terminal icon, select options, and select "Keep in Dock".
 
 ## How does Terminal work?
 

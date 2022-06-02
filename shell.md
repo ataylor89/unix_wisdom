@@ -20,6 +20,18 @@ Shell is an interpreter just like python and java are interpreters.
 
 Examples of shells are bash and zsh, which are commonly found on Unix and Mac OS.
 
+At the bottom of this document, we'll discover that Shell is more than a command-line interface. It might actually be the user interface to the operating system.
+
+Why is this?
+
+Think about the Unix shell, the Windows shell, the Macintosh shell. These shells refer not just to the command-line interface we use in Terminal and MS-DOS and terminal emulators.
+
+These shells refer to the user interfaces of Unix, Windows, and Mac OS.
+
+One formal definition of shell is the user interface of an operating system.
+
+We're going to think about shell as a command-line interface (at the beginning of this document) and gradually discover it's the user interface of an operating system (I discovered this during writing).
+
 ## How can I use shell?
 
 Shell is a command-line interface. bash and zsh are shells. But how do you interact with bash and zsh?

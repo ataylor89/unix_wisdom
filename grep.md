@@ -354,4 +354,4 @@ We can also use grep with options, e.g.
 
     grep -nrw pattern
 
-The above command searches all files in the directory tree (recursively) for the specified pattern. It prints the line number of matching lines and searching for the pattern as a word.
+The above command searches all files in the directory tree (recursively) for the specified pattern. It prints the line number of matching lines and searches for the pattern as a word.

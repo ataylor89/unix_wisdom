@@ -120,7 +120,7 @@ The operating system (Mac OS) has an event loop that listens for events like key
 
 If any of these events are system-level events, the operating system handles these events.
 
-If the events are application-level events, and Terminal is the currently selected application, the operating system passes control to Terminal.
+If the events are application-level events, and Terminal is the current application, the operating system passes control to Terminal.
 
 Terminal has an event loop, just like the operating system, that listens for events in the event queue.
 

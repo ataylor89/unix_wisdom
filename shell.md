@@ -22,7 +22,9 @@ In Terminal, you can type a command like
 
 and get a listing of the directory contents.
 
-To end the command, press the return key. When you press the return key, Terminal recognizes the end of a command and interprets the command.
+To end the command, press the return key. 
+
+When you press the return key, Terminal recognizes the end of a command and interprets the command.
 
 ## How does Terminal work?
 

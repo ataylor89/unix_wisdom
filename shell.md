@@ -289,3 +289,21 @@ An operating system has a command-line interface and a graphical user interface.
 The Unix shell often refers to the command-line interface of Unix.
 
 The Unix shell is a command-line interface, a scripting language, a programming language, an interpreter.
+
+## Conclusion
+
+What's a formal definition of shell?
+
+This might be a formal definition.
+
+An operating system's shell is its user interface.
+
+A shell is the user interface of an operating system.
+
+An operating system has a command-line interface and a graphical user interface.
+
+It's helpful to use programs like Terminal and to get to know the command-line interface of Mac OS.
+
+A command-line interface interprets a user's commands.
+
+The Unix shell is a command-line interface, a scripting language, a programming language, and an interpreter.

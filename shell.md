@@ -204,3 +204,35 @@ What kind of interface is it? A command-line interface.
 Shell is a command-line interface to a computer and its operating system.
 
 It's also a scripting language, a programming language, and an interpreter.
+
+We can script and program on a command-line interface. That's one reason CLIs are so powerful.
+
+We can also run commands on a command-line interface. Like grep and ssh.
+
+And why are GUIs so powerful? Because of drag-and-drop and syntax highlighting. Because of menus and menu items and left clicks and right clicks.
+
+Is the GUI and CLI distinction helpful?
+
+It's the case that there are so many examples of GUIs and CLIS (like Finder and Visual Studio code for GUIS and Terminal, bash and zsh for CLIS) that they really are concrete concepts in computer science.
+
+Unix was created in 1969. The Unix operating system included the Unix shell, a powerful scripting language and command language. 
+
+Microsoft Windows was introduced in 1985. The Windows operating system is named after the concept of windows, the top-level window component in a graphical user interface.
+
+Microsoft Windows is more graphical than MS-DOS, a Microsoft operating system which preceded it. 
+
+Thus CLI is an acronym that has often described the Unix shell, programs like bash and zsh, and Terminal.
+
+GUI is an acronym that described a development in user interfaces that included windows, menubars, menus, menu items, buttons, labels, left clicks, right-clicks, dialogs, and widgets.
+
+Buttons, icons, menus, menu items are part of the graphical user interface.
+
+Commands are part of the command-line interface.
+
+So graphical user interfaces make use of widgets like buttons, menus, menu items, frames, windows.
+
+Command-line interfaces make use of commands like ls, grep, ssh, cat, vi, echo.
+
+When we think of graphical user interfaces, we can think of widgets.
+
+When we think of command-line interfaces, we can think of commands.

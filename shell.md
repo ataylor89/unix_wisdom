@@ -46,11 +46,15 @@ Let's go through it step by step.
 
 You can interact with shell on Mac OS using Terminal.
 
-When you type on your keyboard or make clicks on your trackpad, these events enter an event loop. The operating system listens for events in the event loop, and queues them, and handles them.
+When you type on your keyboard or make clicks on your trackpad, these events enter an event queue. When the event is a system-level event (like swiping left or right on the trackpad) the operating system handles them.
 
-When Terminal is open, Terminal is notified of events like keypresses and mouse clicks.
+Otherwise, the operating system forwards the events to the event queue of the currently running application.
 
-Terminal gets user input from the keyboard and passes it to the underlying, which might be bash or zsh.
+Terminal has its own event loop. Terminal listens for events and handles them.
+
+Terminal listens for keypresses, mouse clicks, and trackpad activity.
+
+When you type the "Return" key in Terminal, Terminal recognizes this keypress, and interprets the line of text as a command. Terminal passes the command to the underlying shell, bash or zsh.
 
 ## Is Terminal a GUI or a CLI?
 

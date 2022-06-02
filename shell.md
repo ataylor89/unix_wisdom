@@ -1,131 +1,73 @@
 # shell
 
-## What is shell?
+## What is a shell?
 
-One formal definition of shell is the user interface of an operating system.
+[Wikipedia](https://en.wikipedia.org/wiki/Shell_(computing)) gives this definition for a shell.
 
-When we speak of the Unix shell, we speak of the Unix user interface.
+> In computing, a shell is a computer program which exposes an operating system's services to a human user or other programs. In general, operating system shells use either a command-line interface (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation. It is named a shell because it is the outermost layer around the operating system.
 
-There is also the Windows shell and the Macintosh shell. 
+The Macintosh operating systems have many unix shells, like bash and zsh, since Mac OS is a derivative of Unix. We can use these Unix shells by opening Terminal.
 
-The user interface of an operating system (the shell) consists of the graphical user interface (GUI), the command-line interface (CLI), voice recognition, face recognition, and more.
+## How do I open Terminal?
 
-Part of learning the Unix shell, the Windows shell, or the Macintosh shell is learning the command-line interface of the operating system.
+Terminal might already be installed on your dock. If not, you can find it by opening Finder, navigating to the Applications folder, navigating to the Utilities folder, and double-clicking on Terminal.
 
-## How can I use the command-line interface?
+Once the Terminal application launches, it will show up in the Dock.
 
-On Mac OS, you can use the command-line interface by opening Terminal. If Terminal is not already in your Dock, you can store Terminal in Dock for easy access.
+To keep Terminal in the dock, you can right-click the Terminal icon, select options, and select "Keep in Dock"
 
-In Terminal, you can type a command like
+## How do I use Terminal?
 
-    ls -l
+To use Terminal, we simply type commands and then press the return key.
 
-and get a listing of the directory contents.
-
-To end the command, press the return key. 
-
-When you press the return key, Terminal recognizes the end of a command and interprets the command.
-
-## How does Terminal work?
-
-Terminal is a GUI that has an underlying interpreter which interprets your commands. The underlying interpreter is often bash or zsh, two derivatives of sh.
-
-If you'd like to find out which interpreter Terminal is using, you can run the commands
-
-    echo $0
-
-and
-
-    echo $SHELL
-
-in Terminal.
-
-## What are some useful commands?
-
-In this document we have used the ls and echo commands. 
-
-We used the command
+For example, the command
 
     ls -l
 
-to get a listing of files in the current directory.
+lists the directory contents using the long format. The -l option specifies the long format.
 
-The -l option tells ls to use the long format.
-
-We can also use the -a option, to list filenames that begin with a dot.
+The command
 
     ls -al
 
-Many configuration files (like .zprofile and .bash_profile) have names that begin with a dot.
+lists the directory contents, including filenames that begin with a dot, using the long format. The -a option specifies that ls should include filenames that begin with a dot.
 
-We used the commands
+The command
 
-    echo $0
+    grep -nrw 'hello world'
 
-and
+searches all files in the current directory, and every subdirectory, for the pattern "hello world".
 
-    echo $SHELL
+The command
 
-to get the name of the interpreter we are using.
+    grep 'python' ~/.zprofile ~/.bash_profile
 
-We can also use echo to write to a file.
+searches the ~/.zprofile and ~/.bash_profile configuration files for occurrences of the pattern "python".
 
-    echo "Hello world" > helloworld.txt
+The command
 
-The above command redirects the output of echo to the file helloworld.txt.
-
-You might ask, what does echo really do?
-
-Echo echoes input as output. It can be used to write to file. It can also be used in a shell script to display text on the screen.
-
-In addition to ls and echo, there are the grep and man commands.
-
-The grep command, which searches for patterns in files, is very useful, and is documented in the [grep.md Markdown file](https://github.com/ataylor89/unix_wisdom/blob/main/grep.md).
-
-One use of the grep command is
-
-    grep pattern file(s)
-
-This usage of grep searches for a pattern in the file or files listed.
-
-We can also use grep to search for text in every file of a directory and its subdirectories.
-
-    grep -nrw pattern
-
-This usage of grep searches for a pattern in every file of the directory tree.
-
-The man command brings up the manual page for any Unix command. The syntax is
-
-    man command
-
-For example,
-
-    man ls
-    man echo
     man grep
 
-We often call the manual page the "man page" as an abbreviation.
+brings up the manual page for the Unix command grep. The manual page (or man page) has a synopsis of the command, and a description of the command. The man page often has a section with examples and a section on the history of the command.
 
-The man page has many sections, including a synopsis, a description and more. The man page often has a section with examples and a section on the history of the command.
+## What's a shell scripting language?
 
-## Where does shell gets its name?
+Shell programs like bash and zsh are interpreters, just like python and java are interpreters.
 
-The word shell often refers to the outermost layer of something. 
+Bash and Zsh are also programming languages, just like python and java are programming languages.
 
-The user interface of an operating system can be thought of as its outermost layer.
+We often call them scripting languages, since we write scripts for bash and zsh. But a scripting language is a kind of programming language.
 
-## What happens when I use Terminal?
+Thus shell is a scripting language, a programming language, and an interpreter. We can say the same about java and python. (Have you noticed that the latest versions of java come equipped with jshell, which let you write scripts in Java just like you can write scripts in Python?)
 
-The operating system (Mac OS) has an event loop that listens for events like keypresses, trackpad activity, and mouse clicks.
+## Are there other definitions of shell?
 
-If any of these events are system-level events, the operating system handles these events.
+There are.
 
-If the events are application-level events, and Terminal is the currently selected application, the operating system passes control to Terminal.
+The Wikipedia definition is a good one.
 
-Terminal has an event loop, just like the operating system, that listens for events in the event queue.
+Another good definition is this: A shell is a user interface to an operating system. 
 
-When Terminal hears an event, it handles the event.
+With this second definition, we can think of the Unix shell, the Windows shell, and the Macintosh shell as user interfaces to the respective operating systems.
 
-When the return key is pressed, Terminal recognizes the end of a command, and parses the command. Terminal then passes the command to its underlying interpreter, bash or zsh, which produces output in response. 
-
-Terminal displays this output on the screen.
+This Markdown document provides two definitions of shell: the definition from Wikipedia and the second definition provided in this section. Both are interesting definitions.

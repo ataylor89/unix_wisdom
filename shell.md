@@ -82,7 +82,19 @@ In addition to ls and echo, there are the grep and man commands.
 
 The grep command, which searches for patterns in files, is very useful, and is documented in the [grep.md Markdown file](https://github.com/ataylor89/unix_wisdom/blob/main/grep.md).
 
-We can bring up the manual page for any Unix shell command by typing
+One use of the grep command is
+
+    grep pattern file(s)
+
+This usage of grep searches for pattern in the file or files listed.
+
+We can also usage grep to search for text in every file of a directory and its subdirectories.
+
+    grep -nrw pattern
+
+This usage of grep searches for a pattern in every file of the directory tree.
+
+The man command brings up the manual page for any Unix command. The syntax is
 
     man <command>
 

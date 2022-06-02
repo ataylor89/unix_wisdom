@@ -58,9 +58,27 @@ We can also use the -a option, to list filenames that begin with a dot.
 
 Many configuration files (like .zprofile and .bash_profile) have names that begin with a dot.
 
-We used the echo command, with the $0 and $SHELL environment variables.
+We used the commands
 
-The echo command echoes text in Terminal.
+    echo $0
+
+and
+
+    echo $SHELL
+
+to get the name of the interpreter we are using.
+
+We can also use echo to write to a file.
+
+    echo "Hello world" > helloworld.txt
+
+The above command redirects the output of echo to the file helloworld.txt.
+
+You might ask, what does echo really do?
+
+Echo echoes input as output. It can be used to write to file. It can also be used in a shell script to display text on the screen.
+
+In addition to ls and echo, there are the grep and man commands.
 
 The grep command, which searches for patterns in files, is very useful, and is documented in the [grep.md Markdown file](https://github.com/ataylor89/unix_wisdom/blob/main/grep.md).
 

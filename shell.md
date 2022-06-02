@@ -236,3 +236,42 @@ Command-line interfaces make use of commands like ls, grep, ssh, cat, vi, echo.
 When we think of graphical user interfaces, we can think of widgets.
 
 When we think of command-line interfaces, we can think of commands.
+
+## A second addendum
+
+A shell can be graphical. 
+
+If shell is the outermost layer of an operating system, there's a command-line interface (the Unix shell or MS-DOS) and a graphical interface (the graphical shell).
+
+The word shell often refers to the Unix shell or MS-DOS, because these are interpreters, scripting languages, and programming languages.
+
+If we're going to be concrete (and it often helps to be concrete) we have:
+
+    1. The Unix shell, the command-line interface to Unix
+    2. MS-DOS, the command-line interface to Windows
+    3. The graphical shell on Mac OS X (which includes Finder, Dock and Desktop)
+    4. The graphical shell on Microsoft Windows (which includes Start Menu, Taskbar and Desktop)
+
+So shell is a word that can refer to the outermost layer of an operating system. It can include the command-line interface (the Unix shell or MS-DOS) as well as the graphical shell (Finder, Dock, Desktop or Start Menu, Taskbar, and Desktop).
+
+Shell often refers to the Unix shell or MS-DOS. 
+
+The Unix shell and MS-DOS are command-line interfaces, scripting languages, and interpreters.
+
+Is there confusion about the word shell? A little.
+
+Are Finder, Dock and Desktop part of the Mac OS shell?
+
+Are Start Menu, Taskbar and Desktop part of the Microsoft Windows shell?
+
+We can say they're part of the graphical shell.
+
+But when we talk about the Unix shell or MS-DOS, we're often referring to the command-line interfaces for Unix and Microsoft Windows. 
+
+When we talk about bash, zsh, and MS-DOS, we're being really concrete.
+
+The Unix shell and MS-DOS are command-line interfaces, scripting languages, and interpreters.
+
+When we think of GUIs, we think of widgets.
+
+When we think of command-line interfaces (CLIs) we think of commands.

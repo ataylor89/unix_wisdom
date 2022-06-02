@@ -88,7 +88,7 @@ One use of the grep command is
 
 This usage of grep searches for a pattern in the file or files listed.
 
-We can also usage grep to search for text in every file of a directory and its subdirectories.
+We can also use grep to search for text in every file of a directory and its subdirectories.
 
     grep -nrw pattern
 

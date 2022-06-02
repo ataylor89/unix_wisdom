@@ -275,3 +275,17 @@ The Unix shell and MS-DOS are command-line interfaces, scripting languages, and 
 When we think of GUIs, we think of widgets.
 
 When we think of command-line interfaces (CLIs) we think of commands.
+
+Does shell mean interface?
+
+It's almost like we're using the word shell to refer to an operating system's user interface.
+
+Maybe that's what it is.
+
+Maybe a shell is the user interface of an operating system. 
+
+An operating system has a command-line interface and a graphical user interface.
+
+The Unix shell often refers to the command-line interface of Unix.
+
+The Unix shell is a command-line interface, a scripting language, a programming language, an interpreter.

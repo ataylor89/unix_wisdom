@@ -161,7 +161,7 @@ In unix commands, options create syntax.
 
 The syntax of a word is its function in a sentence. We can extend this to Unix commands. The syntax of a word in a Unix command is its function in the command.
 
-The -e option specifies the syntax of the word that follows. The word that follows is a pattern that the grep command is instructed to search for. 
+The -e option specifies the syntax of the word that follows. The word that follows is a pattern that grep is instructed to search for. 
 
 ## grep is a utility, a command, and a language
 

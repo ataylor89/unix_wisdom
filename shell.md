@@ -113,3 +113,19 @@ The man page has many sections, including a synopsis, a description and more. Th
 The word shell often refers to the outermost layer of something. 
 
 The user interface of an operating system can be thought of as its outermost layer.
+
+## What happens when I use Terminal?
+
+The operating system (Mac OS) has an event loop that listens for events like keypresses, trackpad activity, and mouse clicks.
+
+If any of these events are system-level events, the operating system handles these events.
+
+If the events are application-level events, and Terminal is the currently selected application, the operating system places these events in Terminal's event queue.
+
+Terminal has an event loop, just like the operating system, that listens for events in its event queue.
+
+When Terminal hears an event, it handles the event.
+
+When the return key is pressed, Terminal recognizes the end of a command, and parses the command. Terminal then passes the command to its underlying interpreter, bash or zsh, which produces output in response. 
+
+Terminal displays this output on the screen.

@@ -26,7 +26,7 @@ Shell is a command-line interface. bash and zsh are shells. But how do you inter
 
 Let's go through it step by step.
 
-You can interact with shell on Mac OS using terminal.
+You can interact with shell on Mac OS using Terminal.
 
 When you type on your keyboard or make clicks on your trackpad, these events enter an event loop. The operating system listens for events in the event loop, and queues them, and handles them.
 
@@ -73,3 +73,37 @@ The shell interprets your command and produces output.
 Terminal picks up the output (by reading from the shell process) and prints the output on its text area.
 
 Terminal reads from and writes to the shell process to interpret your commands, and prints the output of the shell program on its text area.
+
+## Shell is a CLI. But is it a GUI?
+
+Let's think about this. Terminal is both a GUI and a CLI. Shell is a CLI.
+
+We can use shell without a graphical user interface.
+
+We can use shell over voice recognition.
+
+There are computers that have shell as software but don't have graphical user interfaces. They might have voice interfaces that interact with programs like shell.
+
+So you can make a Unix computer that has no windows, keyboards, or mouse clicks, but instead relies on voice recognition that interacts with a command-line interface like shell.
+
+It's kind of like this.
+
+You can SSH into a computer over voice recognition. 
+
+And that's a metaphor (we're comparing SSH to voice recognition).
+
+You can speak a username and a password to a computer in order to log in.
+
+You can speak commands to a computer that are recognized by voice recognition and interpreted by shell.
+
+## Is there another way of explaining it?
+
+CLI is a beautiful acronym as is GUI.
+
+Really, shell is an interpreter and a scripting language. It's also a programming language.
+
+When you think of shell as being analogous to python, it makes a lot of sense.
+
+Shell is a scripting language, a programming language, and an interpreter.
+
+When you learn shell, you learn a scripting language, a programming language, and an interpreter.

@@ -77,3 +77,11 @@ The man command is a very useful command.
 The document it brings up is called a man page.
 
 The man page for a command has a synopsis, a description and more. The man page often has a section for examples and a section on the history of the command.
+
+## Where does shell gets its name?
+
+We defined shell as the user interface of an operating system.
+
+The word shell often refers to the outermost layer of something. 
+
+The user interface of an operating system can be thought of as its outermost layer.

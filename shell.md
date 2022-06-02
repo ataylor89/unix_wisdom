@@ -20,7 +20,7 @@ Shell is an interpreter just like python and java are interpreters.
 
 Examples of shells are bash and zsh, which are commonly found on Unix and Mac OS.
 
-At the bottom of this document, we'll discover that Shell is more than a command-line interface. It might actually be the user interface to the operating system.
+At the end of this document, we'll discover that Shell is more than a command-line interface. It might actually be the user interface to the operating system.
 
 Why is this?
 

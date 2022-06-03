@@ -14,7 +14,7 @@ The operating system (Mac OS) has an event loop. It listens for events in the ev
 
 The operating system handles system-level events. An example would be a swipe on the trackpad. Another example would be when the user's mouse pointer goes to the top of the screen. When the pointer goes to the top of the screen, Mac OS shows the menu bar. The menu bar includes app menus, as well as status menus, Spotlight, Siri, the day and time, the control center, and the notification center. A third example is when the mouse pointer goes to the bottom of the screen. When the mouse pointer goes to the bottom of the screen, Mac OS shows the dock.
 
-When an event is at the application level, the operating system passes control to the current application. In this case it's Terminal. So for keypresses and mouse clicks, Mac OS often passes control to Terminal. 
+When an event is at the application level, the operating system passes control to the current application. In this case it's Terminal. When a key is pressed or a mouse is clicked in an application window, it's usually an application-level event.
 
 Terminal has an event loop just like Mac OS. Terminal listens for events in the event queue, and when it hears an event, calls the appropriate event handler.
 

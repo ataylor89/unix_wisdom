@@ -58,7 +58,9 @@ Bash and Zsh are also programming languages, just like python and java are progr
 
 We often call them scripting languages, since we write scripts for bash and zsh. But a scripting language is a kind of programming language.
 
-Thus shell is a scripting language, a programming language, and an interpreter. We can say the same about java and python. (Have you noticed that the latest versions of java come equipped with jshell, which let you write scripts in Java just like you can write scripts in Python?)
+Thus shell is a scripting language, a programming language, and an interpreter. We can say the same about java and python. 
+
+(Have you noticed that the latest versions of java come equipped with jshell, which lets you write scripts in Java just like you can write scripts in Python?)
 
 ## Are there other definitions of shell?
 

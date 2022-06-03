@@ -69,3 +69,19 @@ The command
     man grep
 
 brings up the manual page for the Unix command grep. The manual page (or man page) has a synopsis of the command, and a description of the command. The man page often has a section with examples and a section on the history of the command.
+
+## What's the anatomy of Terminal?
+
+Terminal has a graphical user interface (GUI) that communicates with an interpreter (bash or zsh).
+
+The interpreter is a separate program from Terminal.
+
+Why is it separate?
+
+Well, it lets you change the interpreter. You can use bash, zsh, or another interpreter, like KornShell and tcsh.
+
+Terminal lets you choose your programming language: bash, zsh, KornShell, tcsh.
+
+That's one reason the interpreter is a program separate from Terminal.
+
+Terminal and the interpreter (bash or zsh) communicate via interprocess communication.
